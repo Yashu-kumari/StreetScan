@@ -1,0 +1,97 @@
+.app {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: #1a1a1a;
+  color: white;
+  min-height: 100vh;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: #00ff88;
+}
+
+.video-container {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.video-feed {
+  width: 640px;
+  height: 480px;
+  border: 2px solid #333;
+  border-radius: 8px;
+}
+
+.detection-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.controls {
+  margin: 20px 0;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.start {
+  background: #00ff88;
+  color: black;
+}
+
+.stop {
+  background: #ff4444;
+  color: white;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.stats {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #333;
+  margin: 5px 0;
+  border-radius: 4px;
+}
+
+.detection-item {
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.detection-item.low {
+  background: rgba(0, 255, 0, 0.2);
+  border-left: 4px solid #00ff00;
+}
+
+.detection-item.medium {
+  background: rgba(255, 165, 0, 0.2);
+  border-left: 4px solid #ffa500;
+}
+
+.detection-item.high {
+  background: rgba(255, 0, 0, 0.2);
+  border-left: 4px solid #ff0000;
+}

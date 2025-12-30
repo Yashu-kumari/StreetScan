@@ -1,0 +1,8 @@
+{
+  "total_detections": 122,
+  "accuracy": 97.54,
+  "avg_confidence": 84.85,
+  "fps": 3.03,
+  "high_confidence": 119,
+  "processing_time": 67.31
+}
